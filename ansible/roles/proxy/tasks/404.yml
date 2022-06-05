@@ -1,9 +1,0 @@
-- name: Close proxy web
-  become: true
-  template:
-    src: templates/default.conf
-    dest: "/etc/nginx/conf.d/default.conf"
-  tags:
-    - nginx
-  notify:
-    - Restart Nginx
