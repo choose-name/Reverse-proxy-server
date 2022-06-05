@@ -1,0 +1,5 @@
+[proxy_serv]
+proxy ansible_host=192.168.1.102 ansible_port=22 ansible_user=vagrant ansible_ssh_private_key_file=./proxy_key
+[web_clients]
+web1 ansible_host=192.168.1.103 ansible_port=22 ansible_user=vagrant ansible_ssh_private_key_file=./web1_key
+web2 ansible_host=192.168.1.104 ansible_port=22 ansible_user=vagrant ansible_ssh_private_key_file=./web2_key
